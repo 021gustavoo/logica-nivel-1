@@ -1,0 +1,17 @@
+
+def calcular_idade_em_dias(anos, meses, dias):
+    dias_anos = anos * 365   
+    dias_meses = meses * 30  
+    total_dias = dias_anos + dias_meses + dias
+    return total_dias
+
+
+anos = int(input("Digite a idade em anos: "))
+meses = int(input("Digite a idade em meses: "))
+dias = int(input("Digite a idade em dias: "))
+
+
+idade_em_dias = calcular_idade_em_dias(anos, meses, dias)
+
+
+print(f"A idade total em dias é: {idade_em_dias} dias")
